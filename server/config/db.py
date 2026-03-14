@@ -3,7 +3,7 @@ from pymongo import MongoClient
 import os   
 load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
-DATABASE_NAME = os.getenv("DATABASE_NAME","rbc_diagnosis")
+DATABASE_NAME = os.getenv("DATABASE_NAME","md")
 
 client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
